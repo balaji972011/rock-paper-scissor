@@ -28,6 +28,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--drk-blue-bg);
+  text-transform: uppercase;
 }
 
 a {
@@ -45,4 +46,138 @@ select {
 img {
   width: 100%;
   height: auto;
+}
+
+.model-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.content-container {
+  min-width: 20rem;
+  max-width: 48rem;
+}
+
+header {
+  width: 26rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid var(--white-clr);
+  border-radius: 10px;
+}
+
+p.header-logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--white-clr);
+  display: flex;
+  flex-direction: column;
+}
+
+.header-scorecontent {
+  background-color: var(--white-clr);
+  text-align: center;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+span.header-scoretext {
+  margin-top: 0.5rem;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--blue-clr);
+}
+
+span.header-scorenumber {
+  margin-bottom: 0.4rem;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--grey-clr);
+}
+
+.gamecontent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.gamecontent-choicetext {
+  margin-top: 2rem;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white-clr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gamecontent-cards-content {
+  width: 26rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gamecontent-cards {
+  background-color: var(--white-clr);
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+
+.gamecontent-cards:hover {
+  transform: scale(0.8);
+  cursor: pointer;
+}
+
+.gamecontent-cards-img {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-size: cover;
+}
+
+.gamecontent-cards.isrock {
+  border: 12px solid var(--red-out);
+}
+
+.isrock .gamecontent-cards-img {
+  background-image: url(../assets/images/rock.png);
+}
+
+.gamecontent-cards.ispaper {
+  border: 12px solid var(--blue-out);
+}
+
+.ispaper .gamecontent-cards-img {
+  background-image: url(../assets/images/paper.png);
+  scale: 0.8;
+}
+
+.gamecontent-cards.isscissor {
+  border: 12px solid var(--yellow-out);
+}
+
+.isscissor .gamecontent-cards-img {
+  background-image: url(../assets/images/scissor.png);
+  scale: 0.7;
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 425px) {
+  header,
+  .gamecontent-cards-content {
+    width: 19rem;
+  }
 }
