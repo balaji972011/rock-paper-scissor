@@ -1,0 +1,48 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --drk-blue-bg: #1b294a;
+  --blue-clr: #2a91db;
+  --grey-clr: #3b4262;
+  --white-clr: #ffffff;
+  --blue-out: #4966f4;
+  --red-out: #dc2f4f;
+  --yellow-out: #ec9f10;
+  --max-width: 1140px;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--drk-blue-bg);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+select {
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
