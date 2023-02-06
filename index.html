@@ -31,26 +31,34 @@
           </p>
           <p class="header-scorecontent">
             <span class="header-scoretext">score</span>
-            <span class="header-scorenumber">0</span>
+            <span class="header-scorenumber" id="scorenumber">0</span>
           </p>
         </header>
         <div class="gamecontent">
           <div class="gamecontent-choicetext">
-            <div class="gamecontent-choicetext-isuser">you picked</div>
-            <div class="gamecontent-choicetext-iscomputer">computer picked</div>
+            <div class="gamecontent-choicetext-isuser">
+              you picked : <span id="isuser"></span>
+            </div>
+            <div class="gamecontent-choicetext-iscomputer">
+              computer picked : <span id="iscomputer"></span>
+            </div>
           </div>
           <div class="gamecontent-cards-content">
-            <div class="gamecontent-cards isrock">
+            <div class="gamecontent-cards isrock" onclick="playGame(`rock`)">
               <div class="gamecontent-cards-img"></div>
             </div>
-            <div class="gamecontent-cards ispaper">
+            <div class="gamecontent-cards ispaper" onclick="playGame(`paper`)">
               <div class="gamecontent-cards-img"></div>
             </div>
-            <div class="gamecontent-cards isscissor">
+            <div
+              class="gamecontent-cards isscissor"
+              onclick="playGame(`scissor`)"
+            >
               <div class="gamecontent-cards-img"></div>
             </div>
           </div>
         </div>
+        <h1 id="result"></h1>
       </div>
     </div>
     <script src="./scripts/script.js"></script>
