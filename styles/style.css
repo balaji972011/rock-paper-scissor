@@ -113,13 +113,23 @@ span.header-scorenumber {
 
 .gamecontent-choicetext {
   margin-top: 2rem;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--white-clr);
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+#isuser,
+#iscomputer {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--grey-clr);
+  background-color: var(--white-clr);
+  border: 4px solid var(--grey-clr);
 }
 
 .gamecontent-cards-content {
@@ -173,6 +183,13 @@ span.header-scorenumber {
   background-image: url(../assets/images/scissor.png);
   scale: 0.7;
   transform: rotate(-45deg);
+}
+
+#result {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--white-clr);
 }
 
 @media screen and (max-width: 425px) {
